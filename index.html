@@ -15,6 +15,25 @@
 </head>
 <body>
 
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">Dr. Upadhayay</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#spotlight">Spotlight</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li> <!-- Link to new page -->
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
@@ -33,7 +52,6 @@
                 <a href="#contact" class="btn btn-outline">Get in Touch</a>
             </div>
 
-            <!-- Added Scroll Arrow -->
             <div class="scroll-arrow">
                 <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
             </div>
@@ -44,7 +62,6 @@
     <section id="about" class="section-light">
         <div class="container about-grid">
             <div class="about-image">
-                <!-- Replace 'profile.jpg' with your actual image file in assets/images/ -->
                 <img src="assets/images/profile.jpg" alt="Dr. Pankaj Upadhayay">
             </div>
             <div class="about-text">
@@ -52,17 +69,15 @@
                 <h2>Passionate About <br> Climate Solutions</h2>
                 <p>I recently completed my PhD from the Centre for Atmospheric Sciences at IIT Delhi, where I focused on understanding monsoon variability and its implications for South Asian climate systems.</p>
                 <p>My research combines advanced statistical methods, climate modeling, and machine learning to decode complex atmospheric patterns. I'm particularly interested in how climate change affects regional weather extremes and agricultural productivity.</p>
-                <p>Beyond research, I'm committed to science communication and making climate science accessible to policymakers and the public.</p>
-
                 <div class="stats-grid">
                     <div class="stat-box">
                         <i class="fa-solid fa-book-open"></i>
-                        <h3>12+</h3>
+                        <h3>15+</h3>
                         <span>Publications</span>
                     </div>
                     <div class="stat-box">
                         <i class="fa-solid fa-medal"></i>
-                        <h3>150+</h3>
+                        <h3>200+</h3>
                         <span>Citations</span>
                     </div>
                     <div class="stat-box">
@@ -86,47 +101,83 @@
             <div class="section-header">
                 <h4 class="section-subtitle">RESEARCH FOCUS</h4>
                 <h2>Areas of Expertise</h2>
-                <p>My research sits at the intersection of climate physics, data science, and societal impact, aiming to bridge the gap between scientific understanding and actionable insights.</p>
+                <p>Bridging the gap between scientific understanding and actionable insights.</p>
             </div>
 
             <div class="card-grid">
-                <!-- Card 1 -->
                 <div class="card">
                     <div class="card-icon icon-blue"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
                     <h3>Monsoon Dynamics</h3>
-                    <p>Investigating the mechanisms driving Indian Summer Monsoon variability and its predictability on seasonal to decadal timescales.</p>
+                    <p>Investigating the mechanisms driving Indian Summer Monsoon variability and predictability.</p>
                     <div class="tags">
                         <span>ENSO</span><span>IOD</span><span>Teleconnections</span>
                     </div>
                 </div>
-
-                <!-- Card 2 -->
                 <div class="card">
                     <div class="card-icon icon-orange"><i class="fa-solid fa-temperature-high"></i></div>
                     <h3>Climate Extremes</h3>
-                    <p>Analyzing the changing patterns of heatwaves, droughts, and extreme precipitation events under global warming scenarios.</p>
+                    <p>Analyzing changing patterns of heatwaves, droughts, and extreme precipitation.</p>
                     <div class="tags">
-                        <span>Attribution</span><span>Risk Assessment</span><span>Adaptation</span>
+                        <span>Risk Assessment</span><span>Adaptation</span>
                     </div>
                 </div>
-
-                <!-- Card 3 -->
                 <div class="card">
                     <div class="card-icon icon-teal"><i class="fa-solid fa-wind"></i></div>
                     <h3>Atmospheric Modeling</h3>
-                    <p>Developing and validating regional climate models to improve projections for South Asian climate systems.</p>
+                    <p>Developing and validating regional climate models for South Asian systems.</p>
                     <div class="tags">
                         <span>WRF</span><span>CMIP6</span><span>Downscaling</span>
                     </div>
                 </div>
-
-                <!-- Card 4 -->
                 <div class="card">
                     <div class="card-icon icon-purple"><i class="fa-solid fa-chart-column"></i></div>
                     <h3>Climate Data Science</h3>
-                    <p>Applying machine learning and statistical techniques to extract insights from large-scale climate datasets.</p>
+                    <p>Applying ML/AI to extract insights from large-scale climate datasets.</p>
                     <div class="tags">
-                        <span>ML/AI</span><span>Big Data</span><span>Pattern Recognition</span>
+                        <span>ML/AI</span><span>Big Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Research Spotlight (Talks & Presentations) -->
+    <section id="spotlight" class="section-light">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">SPOTLIGHT</h4>
+                <h2>Talks & Presentations</h2>
+                <p>Recent conference appearances and invited talks.</p>
+            </div>
+
+            <div class="card-grid">
+                <!-- Talk 1 -->
+                <div class="card">
+                    <div class="card-icon icon-blue"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3>EGU General Assembly</h3>
+                    <p>Presented on the seasonal prediction of Indian Summer Monsoon and stratospheric influence.</p>
+                    <div class="tags">
+                        <span>Vienna, 2022</span><span>Oral Presentation</span>
+                    </div>
+                </div>
+
+                <!-- Talk 2 -->
+                <div class="card">
+                    <div class="card-icon icon-purple"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Climate Services Workshop</h3>
+                    <p>Invited talk on the SARCI Framework for Actionable Climate Information.</p>
+                    <div class="tags">
+                        <span>New Delhi, 2024</span><span>Keynote</span>
+                    </div>
+                </div>
+
+                <!-- Talk 3 -->
+                <div class="card">
+                    <div class="card-icon icon-teal"><i class="fa-solid fa-video"></i></div>
+                    <h3>AI in Meteorology</h3>
+                    <p>Webinar on using Artificial Intelligence for predicting rainfall anomalies.</p>
+                    <div class="tags">
+                        <span>Online, 2023</span><span>Guest Lecture</span>
                     </div>
                 </div>
             </div>
@@ -134,68 +185,114 @@
     </section>
 
     <!-- Publications Section -->
-    <section id="publications" class="section-light">
+    <section id="publications" class="section-grey">
         <div class="container">
             <div class="section-header">
                 <h4 class="section-subtitle">PUBLICATIONS</h4>
                 <h2>Selected Works</h2>
-                <p>Peer-reviewed publications in leading climate science journals</p>
+                <p>Peer-reviewed publications in leading climate science journals.</p>
             </div>
 
             <div class="pub-list">
-                <!-- Paper 1 -->
+                
+                <!-- Paper 1: Nature Climate Change -->
                 <div class="pub-card">
                     <div class="pub-icon"><i class="fa-regular fa-file-lines"></i></div>
                     <div class="pub-details">
                         <div class="pub-header">
-                            <h3>Decadal variability of Indian Summer Monsoon rainfall: A dynamical perspective</h3>
+                            <h3>A need for actionable climate projections across the Global South</h3>
                             <span class="badge-featured"><i class="fa-regular fa-star"></i> Featured</span>
                         </div>
-                        <p class="authors">Your Name, Co-author A, Co-author B</p>
+                        <p class="authors">Mishra, S. K., <strong>Upadhyaya, P.</strong>, Fasullo, J. T., et al.</p>
                         <div class="pub-meta">
-                            <span><strong>Journal of Climate</strong></span>
-                            <span>2025</span>
-                            <span>24 citations</span>
+                            <span><strong>Nature Climate Change</strong></span>
+                            <span>2023</span>
+                            <span>Vol 13(9)</span>
+                        </div>
+                    </div>
+                    <a href="https://doi.org/10.1038/s41558-023-01777-5" target="_blank" class="view-paper">View Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Paper 5: BAMS (2026) - Featured for recency -->
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fa-regular fa-file-lines"></i></div>
+                    <div class="pub-details">
+                        <div class="pub-header">
+                            <h3>Advancing Climate Services in South Asia: The SARCI Framework</h3>
+                            <span class="badge-featured"><i class="fa-regular fa-clock"></i> New</span>
+                        </div>
+                        <p class="authors">Bhuyan, D. P., <strong>Upadhyaya, P.</strong>, Pathak, R., et al.</p>
+                        <div class="pub-meta">
+                            <span><strong>Bulletin of the AMS</strong></span>
+                            <span>2026</span>
+                            <span>In Press</span>
                         </div>
                     </div>
                     <a href="#" class="view-paper">View Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
 
-                <!-- Paper 2 -->
+                <!-- Paper 3: npj Climate (First Author) -->
                 <div class="pub-card">
                     <div class="pub-icon"><i class="fa-regular fa-file-lines"></i></div>
                     <div class="pub-details">
-                        <div class="pub-header">
-                            <h3>Machine learning approaches for seasonal monsoon prediction over South Asia</h3>
-                            <span class="badge-featured"><i class="fa-regular fa-star"></i> Featured</span>
-                        </div>
-                        <p class="authors">Your Name, Co-author C</p>
+                        <h3>Attributing the recent weakening of the South Asian subtropical westerlies</h3>
+                        <p class="authors"><strong>Upadhyaya, P.</strong>, Mishra, S. K., Fasullo, J. T., & Kang, I. S.</p>
                         <div class="pub-meta">
-                            <span><strong>Climate Dynamics</strong></span>
+                            <span><strong>npj Climate and Atmospheric Science</strong></span>
                             <span>2024</span>
-                            <span>18 citations</span>
+                            <span>7(1)</span>
                         </div>
                     </div>
-                    <a href="#" class="view-paper">View Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://doi.org/10.1038/s41612-024-00569-2" target="_blank" class="view-paper">View Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
 
-                <!-- Paper 3 -->
+                <!-- Paper 2: Scientific Reports -->
                 <div class="pub-card">
                     <div class="pub-icon"><i class="fa-regular fa-file-lines"></i></div>
                     <div class="pub-details">
-                        <h3>Attribution of extreme precipitation events to anthropogenic warming in India</h3>
-                        <p class="authors">Co-author A, Your Name, Co-author D</p>
+                        <h3>Artificial intelligence predicts normal summer monsoon rainfall for India in 2023</h3>
+                        <p class="authors">Narang, U., Juneja, K., <strong>Upadhyaya, P.</strong>, et al.</p>
                         <div class="pub-meta">
-                            <span><strong>Nature Communications</strong></span>
+                            <span><strong>Scientific Reports</strong></span>
                             <span>2024</span>
-                            <span>32 citations</span>
+                            <span>14(1)</span>
                         </div>
                     </div>
-                    <a href="#" class="view-paper">View Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://doi.org/10.1038/s41598-024-51720-x" target="_blank" class="view-paper">View Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Paper 4: Current Science -->
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fa-regular fa-file-lines"></i></div>
+                    <div class="pub-details">
+                        <h3>The past climate of the Indian region as seen from the modelling world</h3>
+                        <p class="authors">Tejavath, C. T., <strong>Upadhyay, P.</strong>, & Ashok, K.</p>
+                        <div class="pub-meta">
+                            <span><strong>Current Science</strong></span>
+                            <span>2020</span>
+                            <span>119(2)</span>
+                        </div>
+                    </div>
+                    <a href="https://www.currentscience.ac.in/Volumes/119/02/0316.pdf" target="_blank" class="view-paper">View Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Paper 6: EGU Abstract -->
+                <div class="pub-card">
+                    <div class="pub-icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+                    <div class="pub-details">
+                        <h3>Seasonal Prediction of Indian Summer Monsoon: Influence of Well-resolved Stratosphere</h3>
+                        <p class="authors"><strong>Upadhyaya, P.</strong>, Kanta Mishra, S., Jain, S., & Salunke, P.</p>
+                        <div class="pub-meta">
+                            <span><strong>EGU General Assembly</strong></span>
+                            <span>2022</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <a href="https://doi.org/10.5194/egusphere-egu22-11136" target="_blank" class="view-paper">View Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
 
                 <div class="center-btn">
-                    <a href="#" class="scholar-link">View all on Google Scholar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=bV5zhYAAAAAJ" target="_blank" class="scholar-link">View all on Google Scholar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -208,76 +305,32 @@
                 <h4 class="section-subtitle-green">TECHNICAL SKILLS</h4>
                 <h2 class="text-white">Tools & Technologies</h2>
             </div>
-
             <div class="skills-grid">
-                <!-- Left Column: Tags -->
                 <div class="skills-tags">
                     <h3>Programming & Analysis</h3>
                     <div class="tag-group">
-                        <span class="dark-tag">Python</span>
-                        <span class="dark-tag">R</span>
-                        <span class="dark-tag">MATLAB</span>
-                        <span class="dark-tag">NCL</span>
+                        <span class="dark-tag">Python</span><span class="dark-tag">R</span>
+                        <span class="dark-tag">MATLAB</span><span class="dark-tag">CDO/NCO</span>
                         <span class="dark-tag">Fortran</span>
                     </div>
-
-                    <h3>Climate Tools</h3>
+                    <h3>Climate Models</h3>
                     <div class="tag-group">
-                        <span class="dark-tag">WRF</span>
-                        <span class="dark-tag">CESM</span>
-                        <span class="dark-tag">CDO</span>
-                        <span class="dark-tag">NCO</span>
-                        <span class="dark-tag">GrADS</span>
-                    </div>
-
-                    <h3>Data Science</h3>
-                    <div class="tag-group">
-                        <span class="dark-tag">Machine Learning</span>
-                        <span class="dark-tag">Deep Learning</span>
-                        <span class="dark-tag">Time Series</span>
+                        <span class="dark-tag">WRF</span><span class="dark-tag">CESM</span>
+                        <span class="dark-tag">CMIP6 Data</span>
                     </div>
                 </div>
-
-                <!-- Right Column: Progress Bars -->
                 <div class="skills-progress">
-                    <h3>Core Competencies</h3>
-                    
                     <div class="progress-item">
-                        <div class="progress-info">
-                            <span>Python</span>
-                            <span>95%</span>
-                        </div>
+                        <div class="progress-info"><span>Python & ML</span><span>95%</span></div>
                         <div class="progress-bg"><div class="progress-fill" style="width: 95%"></div></div>
                     </div>
-
                     <div class="progress-item">
-                        <div class="progress-info">
-                            <span>Climate Modeling</span>
-                            <span>90%</span>
-                        </div>
+                        <div class="progress-info"><span>Climate Modeling</span><span>90%</span></div>
                         <div class="progress-bg"><div class="progress-fill" style="width: 90%"></div></div>
                     </div>
-
-                    <div class="progress-item">
-                        <div class="progress-info">
-                            <span>Machine Learning</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="progress-bg"><div class="progress-fill" style="width: 85%"></div></div>
-                    </div>
-
-                    <div class="progress-item">
-                        <div class="progress-info">
-                            <span>Data Visualization</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="progress-bg"><div class="progress-fill" style="width: 92%"></div></div>
-                    </div>
-                    
-                    <!-- Computing Card -->
                     <div class="compute-card">
                         <h4>Computing Resources</h4>
-                        <p>Experience with HPC clusters including IITD HPC, PARAM Siddhi-AI, and cloud computing platforms (AWS, Google Cloud) for large-scale climate simulations.</p>
+                        <p>Experience with HPC clusters (IITD HPC, PARAM Siddhi-AI) and Cloud Platforms.</p>
                     </div>
                 </div>
             </div>
@@ -290,64 +343,25 @@
             <div class="section-header">
                 <h4 class="section-subtitle">GET IN TOUCH</h4>
                 <h2>Let's Collaborate</h2>
-                <p>Interested in research collaboration, consulting, or just want to chat about climate science?</p>
             </div>
-
             <div class="contact-wrapper">
-                <!-- Left Info -->
                 <div class="contact-info">
                     <div class="info-item">
                         <div class="icon-box"><i class="fa-regular fa-envelope"></i></div>
-                        <div>
-                            <span class="label">Email</span>
-                            <a href="mailto:yourname@iitd.ac.in" class="value">yourname@iitd.ac.in</a>
-                        </div>
+                        <div><span class="label">Email</span><a href="mailto:yourname@iitd.ac.in" class="value">yourname@iitd.ac.in</a></div>
                     </div>
-                    <div class="info-item">
-                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                        <div>
-                            <span class="label">Location</span>
-                            <span class="value">New Delhi, India</span>
-                        </div>
-                    </div>
-                    
-                    <p class="connect-label">Connect with me</p>
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=bV5zhYAAAAAJ"><i class="fa-solid fa-graduation-cap"></i></a>
                         <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-regular fa-file"></i></a>
-                    </div>
-
-                    <div class="cv-card">
-                        <h3>Download CV</h3>
-                        <p>Get a detailed overview of my academic background.</p>
-                        <a href="#" class="btn-cv"><i class="fa-regular fa-file-pdf"></i> Download PDF</a>
                     </div>
                 </div>
-
-                <!-- Right Form -->
                 <div class="contact-form">
                     <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" placeholder="Your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" placeholder="your@email.com" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Subject</label>
-                            <input type="text" placeholder="What would you like to discuss?">
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea rows="5" placeholder="Your message..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+                        <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+                        <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+                        <div class="form-group"><textarea rows="4" placeholder="Message"></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -355,10 +369,9 @@
     </section>
 
     <footer>
-        <p>© 2026 • Built with passion for climate science</p>
+        <p>© 2026 Dr. Pankaj Upadhayay • Built for Climate Science</p>
     </footer>
 
-    <!-- JS -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
