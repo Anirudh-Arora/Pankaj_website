@@ -68,7 +68,11 @@ section { padding: 80px 0; }
     background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
 }
 
-.hero-content { max-width: 800px; }
+.hero-content { 
+    max-width: 800px; 
+    z-index: 2;           /* Ensures text is above floating icons */
+    position: relative;   /* Required for z-index to work */
+}
 
 .badge {
     display: inline-block;
