@@ -518,7 +518,7 @@ section {
 /* 1. Cloud (Atmosphere) - Soft White/Blue */
 .floating-bg i:nth-child(1) {
     left: 10%;
-    font-size: 3rem;
+    font-size: 4rem; /* 3 */
     color: rgba(224, 242, 254, 0.3); /* Light Ice Blue */
     animation-duration: 25s;
     animation-delay: 0s;
@@ -527,7 +527,7 @@ section {
 /* 2. Leaf (Agriculture/Biosphere) - Vibrant Green */
 .floating-bg i:nth-child(2) {
     left: 25%;
-    font-size: 2rem;
+    font-size: 3rem; /* 2 */
     color: rgba(34, 197, 94, 0.4); /* Green */
     animation-duration: 18s;
     animation-delay: 2s;
@@ -536,7 +536,7 @@ section {
 /* 3. Droplet (Monsoon/Rainfall) - Deep Blue */
 .floating-bg i:nth-child(3) {
     left: 40%;
-    font-size: 1.6rem;
+    font-size: 2.6rem; /* 1.6 */
     color: rgba(59, 130, 246, 0.5); /* Blue */
     animation-duration: 22s;
     animation-delay: 5s;
@@ -545,7 +545,7 @@ section {
 /* 4. Envira/Nature (Sustainability) - Teal */
 .floating-bg i:nth-child(4) {
     left: 60%;
-    font-size: 2.5rem;
+    font-size: 3.5rem; /* 2.5 */
     color: rgba(20, 184, 166, 0.4); /* Teal */
     animation-duration: 28s;
     animation-delay: 1s;
@@ -554,7 +554,7 @@ section {
 /* 5. Snowflake (Cryosphere/Himalayas) - White */
 .floating-bg i:nth-child(5) {
     left: 75%;
-    font-size: 1.8rem;
+    font-size: 2.8rem; /* 1.8 */
     color: rgba(255, 255, 255, 0.4); /* Pure White */
     animation-duration: 20s;
     animation-delay: 7s;
@@ -563,7 +563,7 @@ section {
 /* 6. Wind (Dynamics) - Slate Blue */
 .floating-bg i:nth-child(6) {
     left: 85%;
-    font-size: 2rem;
+    font-size: 3rem; /* 2 */
     color: rgba(148, 163, 184, 0.4); /* Slate */
     animation-duration: 24s;
     animation-delay: 3s;
