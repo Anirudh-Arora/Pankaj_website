@@ -608,3 +608,105 @@ section {
     }
 }
 
+
+/* =========================================
+   CAREER PAGE TIMELINE STYLES
+   ========================================= */
+
+.timeline-heading {
+    font-size: 1.8rem;
+    color: var(--primary-dark);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.timeline-heading i {
+    color: var(--primary-green);
+}
+
+.timeline-item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* The vertical line */
+.timeline-group {
+    position: relative;
+    border-left: 2px solid #e2e8f0;
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+/* The dot on the line */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -49px; /* Adjust based on padding of group */
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 3px solid var(--primary-green);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-date {
+    min-width: 120px;
+    font-weight: 700;
+    color: var(--primary-green);
+    font-size: 0.95rem;
+    padding-top: 2px; /* Align with title */
+}
+
+.timeline-content {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    flex-grow: 1;
+    transition: 0.3s;
+}
+
+.timeline-content:hover {
+    border-color: var(--primary-green);
+    transform: translateX(5px);
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    color: var(--primary-dark);
+    margin-bottom: 5px;
+}
+
+.timeline-content .institution {
+    display: block;
+    color: #64748b;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.timeline-content p {
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+/* Mobile Responsiveness for Timeline */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .timeline-date {
+        margin-bottom: 5px;
+    }
+}
+
