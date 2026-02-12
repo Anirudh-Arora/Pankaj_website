@@ -490,7 +490,7 @@ section {
 
 /* =========================================
    FLOATING OBJECTS ANIMATION (COLORFUL VERSION)
-   ========================================= */
+   ========================================= 
 
 .floating-bg {
     position: absolute;
@@ -503,77 +503,77 @@ section {
     pointer-events: none;
 }
 
-/* Base style for icons */
+
 .floating-bg i, 
 .floating-bg .circle-particle {
     position: absolute;
     bottom: -50px;
     animation: floatUp 15s linear infinite;
     z-index: 0;
-    opacity: 0; /* Starts invisible, handled by keyframes */
+    opacity: 0; 
 }
 
-/* --- Specific Colors & Positions --- */
 
-/* 1. Cloud (Atmosphere) - Soft White/Blue */
+
+
 .floating-bg i:nth-child(1) {
     left: 10%;
-    font-size: 4rem; /* 3 */
-    color: rgba(224, 242, 254, 0.3); /* Light Ice Blue */
+    font-size: 4rem; 
+    color: rgba(224, 242, 254, 0.3); 
     animation-duration: 25s;
     animation-delay: 0s;
 }
 
-/* 2. Leaf (Agriculture/Biosphere) - Vibrant Green */
+
 .floating-bg i:nth-child(2) {
     left: 25%;
-    font-size: 3rem; /* 2 */
-    color: rgba(34, 197, 94, 0.4); /* Green */
+    font-size: 3rem; 
+    color: rgba(34, 197, 94, 0.4); 
     animation-duration: 18s;
     animation-delay: 2s;
 }
 
-/* 3. Droplet (Monsoon/Rainfall) - Deep Blue */
+
 .floating-bg i:nth-child(3) {
     left: 40%;
-    font-size: 2.6rem; /* 1.6 */
-    color: rgba(59, 130, 246, 0.5); /* Blue */
+    font-size: 2.6rem; 
+    color: rgba(59, 130, 246, 0.5); 
     animation-duration: 22s;
     animation-delay: 5s;
 }
 
-/* 4. Envira/Nature (Sustainability) - Teal */
+
 .floating-bg i:nth-child(4) {
     left: 60%;
-    font-size: 3.5rem; /* 2.5 */
-    color: rgba(20, 184, 166, 0.4); /* Teal */
+    font-size: 3.5rem; 
+    color: rgba(20, 184, 166, 0.4); 
     animation-duration: 28s;
     animation-delay: 1s;
 }
 
-/* 5. Snowflake (Cryosphere/Himalayas) - White */
+
 .floating-bg i:nth-child(5) {
     left: 75%;
-    font-size: 2.8rem; /* 1.8 */
-    color: rgba(255, 255, 255, 0.4); /* Pure White */
+    font-size: 2.8rem; 
+    color: rgba(255, 255, 255, 0.4);
     animation-duration: 20s;
     animation-delay: 7s;
 }
 
-/* 6. Wind (Dynamics) - Slate Blue */
+
 .floating-bg i:nth-child(6) {
     left: 85%;
-    font-size: 3rem; /* 2 */
-    color: rgba(148, 163, 184, 0.4); /* Slate */
+    font-size: 3rem; 
+    color: rgba(148, 163, 184, 0.4);
     animation-duration: 24s;
     animation-delay: 3s;
 }
 
-/* --- Data Particles (The "Data-Driven" aspect) --- */
+
 .circle-particle {
-    background: rgba(16, 185, 129, 0.6); /* Bright Emerald Green */
+    background: rgba(16, 185, 129, 0.6);
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(16, 185, 129, 0.4); /* Glowing effect */
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.4); 
 }
 
 .floating-bg .circle-particle:nth-child(7) { 
@@ -590,24 +590,134 @@ section {
 }
 
 
-/* Animation Keyframes */
+
 @keyframes floatUp {
     0% {
         transform: translateY(0) rotate(0deg) translateX(0);
         opacity: 0;
     }
     10% {
-        opacity: 1; /* Fully visible quickly */
+        opacity: 1; 
     }
     90% {
-        opacity: 0.8; /* Stay visible */
+        opacity: 0.8; 
     }
     100% {
         transform: translateY(-110vh) rotate(360deg) translateX(20px);
-        opacity: 0; /* Fade out at very top */
+        opacity: 0; 
     }
 }
+*/
 
+/* =========================================
+   FLOATING OBJECTS (CUSTOM IMAGES VERSION)
+   ========================================= */
+
+.floating-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Base style for IMAGES and PARTICLES */
+.floating-bg img, 
+.floating-bg .circle-particle {
+    position: absolute;
+    bottom: -150px; /* Start lower to hide larger images */
+    animation: floatUp 15s linear infinite;
+    z-index: 0;
+    opacity: 0; 
+}
+
+/* --- Specific Settings for Your Images --- */
+
+/* 1. Wind Cloud */
+.floating-bg img:nth-child(1) {
+    left: 10%;
+    width: 140px; /* Adjust size here */
+    opacity: 0.4; /* Transparency */
+    animation-duration: 25s;
+    animation-delay: 0s;
+}
+
+/* 2. Computer/Modeling */
+.floating-bg img:nth-child(2) {
+    left: 25%;
+    width: 100px;
+    opacity: 0.5;
+    animation-duration: 18s;
+    animation-delay: 2s;
+}
+
+/* 3. Rain Cloud */
+.floating-bg img:nth-child(3) {
+    left: 45%;
+    width: 110px;
+    opacity: 0.5;
+    animation-duration: 22s;
+    animation-delay: 5s;
+}
+
+/* 4. Globe */
+.floating-bg img:nth-child(4) {
+    left: 70%;
+    width: 130px;
+    opacity: 0.4;
+    animation-duration: 28s;
+    animation-delay: 1s;
+}
+
+/* 5. Turbine */
+.floating-bg img:nth-child(5) {
+    left: 85%;
+    width: 100px;
+    opacity: 0.35;
+    animation-duration: 20s;
+    animation-delay: 7s;
+}
+
+/* --- Data Particles (The dots) --- */
+.circle-particle {
+    background: rgba(16, 185, 129, 0.6);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+}
+
+.floating-bg .circle-particle:nth-child(6) { 
+    left: 15%; width: 14px; height: 14px; 
+    animation-duration: 15s; animation-delay: 8s; 
+}
+.floating-bg .circle-particle:nth-child(7) { 
+    left: 50%; width: 10px; height: 10px; 
+    animation-duration: 19s; animation-delay: 12s; 
+}
+.floating-bg .circle-particle:nth-child(8) { 
+    left: 92%; width: 20px; height: 20px; 
+    animation-duration: 30s; animation-delay: 4s; 
+}
+
+/* Animation Keyframes */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.5; /* Fade in */
+    }
+    90% {
+        opacity: 0.5; /* Stay visible */
+    }
+    100% {
+        transform: translateY(-110vh) rotate(10deg); /* Slight rotation */
+        opacity: 0;
+    }
+}
 
 /* =========================================
    CAREER PAGE TIMELINE STYLES
