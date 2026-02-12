@@ -716,15 +716,20 @@ section {
    ========================================= */
 
 .subsection-title {
+    display: flex;              /* Enables Flexbox */
+    align-items: center;        /* Vertically centers icon with text */
+    justify-content: center;    /* Horizontally centers everything */
+    width: 100%;                /* Forces the heading to span the full page width */
+    text-align: center;         /* Fallback for older browsers */
+    
     font-size: 1.5rem;
     color: var(--primary-dark);
-    margin-bottom: 35px;         /* Increased spacing slightly */
-    display: flex;
-    align-items: center;
-    justify-content: center;     /* <--- This moves everything to the center */
-    gap: 12px;
+    margin-bottom: 35px;
+    gap: 12px;                  /* Space between icon and text */
     
-    /* Removed border-left and padding-left */
+    /* Ensure no borders are interfering */
+    border: none;
+    padding: 0;
 }
 
 .subsection-title i {
