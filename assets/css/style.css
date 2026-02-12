@@ -718,12 +718,13 @@ section {
 .subsection-title {
     font-size: 1.5rem;
     color: var(--primary-dark);
-    margin-bottom: 25px;
+    margin-bottom: 35px;         /* Increased spacing slightly */
     display: flex;
     align-items: center;
+    justify-content: center;     /* <--- This moves everything to the center */
     gap: 12px;
-    border-left: 4px solid var(--primary-green);
-    padding-left: 15px;
+    
+    /* Removed border-left and padding-left */
 }
 
 .subsection-title i {
