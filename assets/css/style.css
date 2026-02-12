@@ -710,3 +710,38 @@ section {
     }
 }
 
+
+/* =========================================
+   SPOTLIGHT SECTION UPDATES
+   ========================================= */
+
+.subsection-title {
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 4px solid var(--primary-green);
+    padding-left: 15px;
+}
+
+.subsection-title i {
+    color: var(--primary-green);
+    font-size: 1.3rem;
+}
+
+/* Optional "Read More" link for news cards */
+.read-more-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    transition: 0.3s;
+}
+
+.read-more-link:hover {
+    color: var(--primary-dark);
+    transform: translateX(5px);
+}
