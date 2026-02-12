@@ -613,6 +613,10 @@ section {
    FLOATING OBJECTS (CUSTOM IMAGES VERSION)
    ========================================= */
 
+/* =========================================
+   FLOATING OBJECTS (FIXED SIZE & OPACITY)
+   ========================================= */
+
 .floating-bg {
     position: absolute;
     top: 0;
@@ -620,27 +624,33 @@ section {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 0;
+    z-index: 1; /* Lowest layer */
     pointer-events: none;
 }
 
-/* Base style for IMAGES and PARTICLES */
-.floating-bg img, 
-.floating-bg .circle-particle {
-    position: absolute;
-    bottom: -150px; /* Start lower to hide larger images */
-    animation: floatUp 15s linear infinite;
-    z-index: 0;
-    opacity: 0; 
+/* Ensure Hero Text stays ON TOP */
+.hero-content {
+    position: relative;
+    z-index: 10 !important; /* Forces text above the images */
 }
 
-/* --- Specific Settings for Your Images --- */
+/* Base style for IMAGES */
+.floating-bg img {
+    position: absolute;
+    bottom: -150px;
+    opacity: 0.15 !important; /* Very subtle transparency */
+    animation: floatUp 20s linear infinite;
+    z-index: 1;
+    max-width: 100px !important; /* Force max width so they never get huge */
+    height: auto;
+}
+
+/* --- Specific Settings for Each Icon --- */
 
 /* 1. Wind Cloud */
 .floating-bg img:nth-child(1) {
     left: 10%;
-    width: 140px; /* Adjust size here */
-    opacity: 0.4; /* Transparency */
+    width: 120px !important;
     animation-duration: 25s;
     animation-delay: 0s;
 }
@@ -648,8 +658,7 @@ section {
 /* 2. Computer/Modeling */
 .floating-bg img:nth-child(2) {
     left: 25%;
-    width: 100px;
-    opacity: 0.5;
+    width: 90px !important;
     animation-duration: 18s;
     animation-delay: 2s;
 }
@@ -657,8 +666,7 @@ section {
 /* 3. Rain Cloud */
 .floating-bg img:nth-child(3) {
     left: 45%;
-    width: 110px;
-    opacity: 0.5;
+    width: 100px !important;
     animation-duration: 22s;
     animation-delay: 5s;
 }
@@ -666,8 +674,7 @@ section {
 /* 4. Globe */
 .floating-bg img:nth-child(4) {
     left: 70%;
-    width: 130px;
-    opacity: 0.4;
+    width: 110px !important;
     animation-duration: 28s;
     animation-delay: 1s;
 }
@@ -675,31 +682,25 @@ section {
 /* 5. Turbine */
 .floating-bg img:nth-child(5) {
     left: 85%;
-    width: 100px;
-    opacity: 0.35;
+    width: 90px !important;
     animation-duration: 20s;
     animation-delay: 7s;
 }
 
-/* --- Data Particles (The dots) --- */
+/* --- Data Particles (Dots) --- */
 .circle-particle {
+    position: absolute;
+    bottom: -150px;
     background: rgba(16, 185, 129, 0.6);
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+    animation: floatUp 20s linear infinite;
+    z-index: 1;
 }
 
-.floating-bg .circle-particle:nth-child(6) { 
-    left: 15%; width: 14px; height: 14px; 
-    animation-duration: 15s; animation-delay: 8s; 
-}
-.floating-bg .circle-particle:nth-child(7) { 
-    left: 50%; width: 10px; height: 10px; 
-    animation-duration: 19s; animation-delay: 12s; 
-}
-.floating-bg .circle-particle:nth-child(8) { 
-    left: 92%; width: 20px; height: 20px; 
-    animation-duration: 30s; animation-delay: 4s; 
-}
+.floating-bg .circle-particle:nth-child(6) { left: 15%; width: 14px; height: 14px; animation-duration: 15s; }
+.floating-bg .circle-particle:nth-child(7) { left: 50%; width: 10px; height: 10px; animation-duration: 19s; delay: 12s; }
+.floating-bg .circle-particle:nth-child(8) { left: 92%; width: 20px; height: 20px; animation-duration: 30s; delay: 4s; }
 
 /* Animation Keyframes */
 @keyframes floatUp {
@@ -708,13 +709,13 @@ section {
         opacity: 0;
     }
     10% {
-        opacity: 0.5; /* Fade in */
+        opacity: 0.15; /* Maximum visibility */
     }
     90% {
-        opacity: 0.5; /* Stay visible */
+        opacity: 0.15;
     }
     100% {
-        transform: translateY(-110vh) rotate(10deg); /* Slight rotation */
+        transform: translateY(-110vh) rotate(10deg);
         opacity: 0;
     }
 }
