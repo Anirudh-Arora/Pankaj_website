@@ -862,3 +862,7 @@ section {
     color: var(--primary-dark);
     transform: translateX(5px);
 }
+
+.icon-green {
+    background: #10b981; /* Emerald Green */
+}
