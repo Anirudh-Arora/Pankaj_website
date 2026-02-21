@@ -866,4 +866,50 @@ section {
     transform: translateX(5px);
 }
 
+/* =========================================
+   SKILLS SECTION UPDATES
+   ========================================= */
+
+/* The Right Column Container */
+.skills-cards-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the boxes */
+}
+
+/* The Box Style */
+.compute-card {
+    background: #1e293b; /* Dark Blue-Grey */
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+}
+
+.compute-card:hover {
+    border-color: var(--primary-green);
+    transform: translateX(5px); /* Slight movement on hover */
+}
+
+/* Header inside the box */
+.compute-card h4 {
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.compute-card h4 i {
+    color: var(--primary-green); /* Green Icon */
+}
+
+.compute-card p {
+    color: #94a3b8; /* Light Grey Text */
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
 
