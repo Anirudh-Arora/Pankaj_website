@@ -153,12 +153,16 @@ section { padding: 80px 0; }
 }
 
 /* --- About Section --- */
-.about-grid { display: flex; gap: 50px; align-items: center; }
-.about-image { flex: 1; }
+.about-grid { display: flex; gap: 60px; align-items: center; } /* Increased gap slightly for breathing room */
+
+/* Give the image less width (roughly 35-40%) */
+.about-image { flex: 0.8; } 
 .about-image img { width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-.about-text { flex: 1; }
+
+/* Give the text MORE width (roughly 60-65%) so it's less compact */
+.about-text { flex: 1.4; } 
 .about-text h2 { font-size: 2.5rem; margin-bottom: 20px; }
-.about-text p { color: var(--text-light); margin-bottom: 20px; }
+.about-text p { color: var(--text-light); margin-bottom: 20px; text-align: justify; } /* Added justify for cleaner reading */
 
 .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
 .stat-box { background: var(--bg-grey); padding: 20px; border-radius: 12px; text-align: center; }
